@@ -15,7 +15,7 @@ function filterOutOdds() {
 const filterOutodds = (...arr) => arr.filter( val => val % 2 === 0)
 
 ```
-
+====================================================================================
 ### findMin
 Write a function called findMin that accepts a variable number of arguments and returns the smallest argument.
 
@@ -31,6 +31,7 @@ const findMid = (...arr) => arr.reduce((small,val) => small < val ? small : val)
 
 const findMid = (..arr) => Math.min(...arr)
 ```
+====================================================================================
 
 ### mergeObjects
 Write a function called mergeObjects that accepts two objects and returns a new object which contains all the keys and values of the first object and second object.
@@ -48,6 +49,7 @@ const mergeObject = (object1,object2)=>{
 
 const mergeObject = (obj1,obj2) => ({...obj1,..obj2})
 ```
+====================================================================================
 
 ### doubleAndReturnArgs
 Write a function called doubleAndReturnArgs which accepts an array and a variable number of arguments. The function should return a new array with the original array values and all of additional arguments doubled.
@@ -61,6 +63,7 @@ const doubleAndReturnArgs = (arr,...arr1) => ([...arr].concat(arr1.map(v => v * 
 
 const doubleAndReturnArgs = (arr,...arr1) => ([...arr,...arr1.map(v => v * 2)])
 ```
+====================================================================================
 
 ### Slice and Dice!
 For this section, write the following functions using rest, spread and refactor these functions to be arrow functions!
